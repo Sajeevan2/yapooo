@@ -1,0 +1,22 @@
+export const TrendData = [
+    {
+        name:"SLCrisis",
+        shares:200
+    },
+    {
+        name:"Ukrain",
+        shares:160
+    },
+    {
+        name:"kpop",
+        shares:34
+    },
+    {
+        name:"ksy",
+        shares:1
+    },
+    {
+        name:"react",
+        shares:1
+    },
+]
