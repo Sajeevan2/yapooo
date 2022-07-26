@@ -8,16 +8,19 @@ import {UilSetting} from '@iconscout/react-unicons'
 
 import TrendCard from '../trendCard/TrendCard'
 import ShareModal from '../shareModal/ShareModal'
+import {Link} from 'react-router-dom'
 
 const RightSide = () => {
   const [modalOpen,setModalOpen]= useState(false)
   return (
     <div className='rightSide'>
         <div className="navIcons">
-            <img src={Home} alt="" />
+            <Link to='../home'>
+              <img src={Home} alt="" />
+            </Link>
             <UilSetting/>
             <img src={Notification} alt="" />
-            <img src={Comment} alt="" />setModalOpen
+            <img src={Comment} alt="" />
         </div>
         <TrendCard/>
         <button className='button rBtn' onClick={()=>setModalOpen(true)}>
